@@ -1,8 +1,9 @@
-const express = require('express');
-const app = express();
+var express = require('express');
+var app = express();
 
-var helmet = require("helmet");
-app.use(helmet())
+const helmet = require("helmet");
+
+app.use(helmet.hidePoweredBy());
 
 
 
